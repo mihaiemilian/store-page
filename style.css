@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1 {
+    font-weight: 600;
+    line-height: 4.31rem;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 3.37rem;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 2.75rem;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h4 {
+    font-weight: 600;
+    line-height: 2rem;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.body-1 {
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.body-2 {
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 14px;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.button-big {
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.button-small {
+    font-weight: 700;
+    line-height: 1rem;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.caption {
+    font-weight: 500;
+    line-height: 1rem;
+    font-size: 12px;
+    color: #222549;
+    font-family: 'Libre Franklin', sans-serif;
+}
+/* Typography End */
+
+
+/* Color */
+:root {
+    --primary-color: #353A8D;
+    --accent-color: #40DD9C;
+    --neutral-color: #36385A;
+    --p100: #E2E3E9;
+    --p0: #9C9DB2;
+    --p01: rgba(156,157,178,0.3);
+    --p1: #60627D;
+    --p2: #4B4D6C;
+    --p3: #36385A;
+    --p4: #222549;
+    --emp-sec-color:  #353A8C;
+    --teal-100: #D8EFF0;
+    --teal-900: #45888E;
+    --primary-900: #10246A;
+    --succes-100: #EBF4E7;
+    --succes-500: #6AA64F;
+    --succes-900: #3C7425;
+    --warning-100: #FBF4E0;
+    --warning-500: #BD8E00;
+    --warning-900: #8F6B00;
+    --error-100: #F9E2E2;
+    --error-500: #DE6664;
+    --error-900: #B33A38;
+}
+/* Color End */
+
+
+/* Elevation */
+.shadow-f1 {
+    box-shadow: 0px 2px 4px rgba(8, 68, 73, 0.24), 0px 4px 16px rgba(8, 68, 73, 0.35);
+}
+
+.shadow-f2 {
+    box-shadow: 0px 8px 24px rgba(8, 68, 73, 0.35);
+}
+/* Elevation End */
+
+
+/* Buttons */
+.button-large {
+    border-radius: 4px; 
+    padding: 12px 24px;
+    border: none;
+}
+
+.button-normal {
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+}
+
+.button-small {
+    border-radius: 4px;
+    padding: 8px 24px;
+    border: none;
+}
+
+/* Emphasis */
+.button-accent {
+    background-color: var(--accent-color);
+    color: var(--primary-500);
+}
+
+.button-primary {
+    background: var(--primary-500); 
+    color: white;    
+}
+
+.button-secondary {
+    background-color: white;
+    color: var(--primary-500);
+    border: 1px solid var(--primary-900);
+}
+
+.button-tertiary {
+    background-color: white;
+    color: var(--primary-900);
+}
+/* Emphasis End */
+
+
+/* States */
+.button-accent:hover {
+    background-color: #53E0A6;
+    color: var(--emp-sec-color);
+}
+
+.button-accent:focus {
+    background-color: #53E0A6;
+    color: var(--emp-sec-color);
+    border: 3px solid #70A6F7;
+}
+
+.button-accent:active {
+    background-color: #23C78B;
+    color: var(--primary-900);
+}
+
+.button-secondary:hover {
+    background-color: #4C53B1;
+    color: white;
+}
+
+.button-secondary:focus {
+    background-color: #4C53B1;
+    color: white;
+    border: 3px solid #70A6F7;
+}
+
+.button-secondary:active {
+    background-color: #10246A;
+    color: white;
+}
+
+.button-tertiary:hover {
+    background-color: #F3F4F8;
+    color: #4C53B1;
+}
+
+.button-tertiary:focus {
+    background-color: #F3F4F8;
+    color: #4C53B1;
+    border: 3px solid #70A6F7;
+}
+
+.button-tertiary:active {
+    background-color: #CFD3E1;
+    color: var(--primary-color);
+}
+/* States End */
+
+.button-disabled {
+    background-color: #E2E3E9;
+}
+/* Buttons End */
