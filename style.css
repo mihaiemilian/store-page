@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Typography */
 h1 {
     font-weight: 600;
@@ -117,22 +121,25 @@ h4 {
 
 
 /* Buttons */
-.button-large {
+.btn-large {
     border-radius: 4px; 
     padding: 12px 24px;
     border: none;
+    cursor: pointer;
 }
 
-.button-normal {
+.btn-normal {
     border-radius: 4px;
     padding: 12px 24px;
     border: none;
+    cursor: pointer;
 }
 
-.button-small {
+.btn-small {
     border-radius: 4px;
     padding: 8px 24px;
     border: none;
+    cursor: pointer;
 }
 
 /* Emphasis */
@@ -213,3 +220,42 @@ h4 {
     background-color: #E2E3E9;
 }
 /* Buttons End */
+
+/* Page Layout */
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width:  1040px;
+    height: 70px;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-icon i {
+    margin-left: 10px;
+}
