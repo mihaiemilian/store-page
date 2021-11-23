@@ -145,23 +145,23 @@ h4 {
 /* Emphasis */
 .button-accent {
     background-color: var(--accent-color);
-    color: var(--primary-500);
+    color: var(--primary-color);
 }
 
 .button-primary {
-    background: var(--primary-500); 
+    background: var(--primary-color); 
     color: white;    
 }
 
 .button-secondary {
     background-color: white;
-    color: var(--primary-500);
+    color: var(--primary-color);
     border: 1px solid var(--primary-900);
 }
 
 .button-tertiary {
     background-color: white;
-    color: var(--primary-900);
+    color: var(--primary-color);
 }
 /* Emphasis End */
 
@@ -239,12 +239,16 @@ h4 {
     justify-content: space-between;
     width:  1040px;
     height: 70px;
-    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    padding: 1rem 0rem;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
+}
+
+.nav-item a {
+    margin: 5px;
 }
 
 .nav-icon {
@@ -258,4 +262,62 @@ h4 {
 
 .nav-icon i {
     margin-left: 10px;
+}
+
+.nav-item .button-small {
+    display: none;
+}
+
+.top-bar {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.top-bar span {
+    color: var(--primary-color);
+}
+
+.path-link {
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.product-box {
+    background: #FFFFFF;
+    border: 1px solid #E1E1EA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+}
+
+.product-box:hover {
+    box-shadow: 0px 8px 24px rgba(8, 68, 73, 0.35);
+}
+
+.product-image {
+    background: url(https://place-puppy.com/340x220) no-repeat center/cover;
+    width: 100%;
+    height: 200px;
+}
+
+.product-text {
+    padding-bottom: 1rem;
+}
+
+.product-title {
+    color: var(--primary-color);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.product-description {
+    color: var(--p1);
+    padding: 0rem 0.5rem 0.5rem 1rem;
 }
