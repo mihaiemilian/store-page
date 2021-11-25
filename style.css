@@ -228,6 +228,8 @@ h4 {
     margin: 0 auto;
 }
 
+/* Navigation Bar */
+
 .container-fluid {
     width: 100%;
     display: flex;
@@ -240,6 +242,7 @@ h4 {
     width:  1040px;
     height: 70px;
     padding: 1rem 0rem;
+    margin: 0rem 1rem 1rem 1rem;
 }
 
 .nav-item {
@@ -268,6 +271,8 @@ h4 {
     display: none;
 }
 
+/* Products */
+
 .top-bar {
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -284,17 +289,26 @@ h4 {
 
 .products {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    gap: 21px;
 }
 
 .product-box {
     background: #FFFFFF;
     border: 1px solid #E1E1EA;
+    max-width: 340px;
     box-sizing: border-box;
     border-radius: 8px;
-    padding-bottom: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.product-box button {
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    position: relative;
+    left: 70%;
 }
 
 .product-box:hover {
@@ -302,7 +316,8 @@ h4 {
 }
 
 .product-image {
-    background: url(https://place-puppy.com/340x220) no-repeat center/cover;
+    background: url(https://place-puppy.com/340x220) no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 200px;
 }
@@ -320,4 +335,152 @@ h4 {
 .product-description {
     color: var(--p1);
     padding: 0rem 0.5rem 0.5rem 1rem;
+}
+
+/* Description */
+
+.description {
+    margin-bottom: 3rem;
+}
+
+.description-image {
+    background: url(https://place-puppy.com/340x220) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 159px;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.description-text h4 {
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 21px;
+    color: var(--p3);
+}
+
+.description-text p {
+    padding: 0rem 1rem 1rem 1rem;
+    color: var(--p3);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-top: 1px solid #9C9DB2;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.list-first-item {
+    color: var(--primary-900);
+    font-weight: 600;
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+    color: var(--p1);
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-text {
+    color:var(--p1);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.copyright p {
+    color: var(--p1);
+}
+
+
+
+@media (min-width: 730px) {
+
+    /* Navbar */
+
+    .mobile-bars {
+        display: none;
+    }
+
+    .navbar .nav-item .button-small {
+        display: block;
+    }
+
+    /* Products */
+
+    .products {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .product-box button {
+        display: block;
+        overflow: hidden;
+    }
+
+    /* Button Animation */
+
+    
+
+    /* Description */
+
+    .description {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 0rem 1rem;
+    }
+
+    .description-image {
+        min-width: 420px;
+        height: 327px;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: none;
+        padding: 1rem;
+    }
+
+    .footer-list ul {
+        margin-right: 3.5rem;
+    }
+
+    .icons {
+        justify-content: flex-start;  
+    }
+
+    .icons a {
+        margin-right: 3rem;
+    }
 }
