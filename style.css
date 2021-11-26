@@ -309,6 +309,9 @@ h4 {
     border-radius: 50px;
     position: relative;
     left: 70%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateX(-20px);
 }
 
 .product-box:hover {
@@ -371,6 +374,7 @@ h4 {
     max-width: 100%;
     padding: 1rem 1rem 0.5rem 1rem;
     border-top: 1px solid #9C9DB2;
+    background-color: #F8F8F9;
 }
 
 .footer-list {
@@ -418,7 +422,7 @@ h4 {
 
 
 
-@media (min-width: 730px) {
+@media screen and (min-width: 730px) {
 
     /* Navbar */
 
@@ -434,8 +438,7 @@ h4 {
 
     .products {
         flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 0.5rem;
+        flex-wrap: wrap;
         margin-bottom: 6.5rem;
     }
 
@@ -444,9 +447,17 @@ h4 {
         overflow: hidden;
     }
 
+    .products a {
+        flex-basis: calc(100% / 3 - 0.5rem);
+        flex-grow: 1;
+    }
+
     /* Button Animation */
 
-    
+    .product-box:hover button {
+        transform: translateX(0);
+        opacity: 1;
+    }
 
     /* Description */
 
